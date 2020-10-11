@@ -1,0 +1,8 @@
+@import "./global-styles.css";
+
+@import"./header.css";
+@import"./header-download.css";
+@import"./latest-article.css";
+@import"./testimonials.css";
+@import"./footer.css";
+@import"./animation.css"

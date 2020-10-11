@@ -1,0 +1,86 @@
+/*** header ***/
+.header {
+    overflow: hidden;
+}
+.header__container {
+    padding-inline-start: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-right: 15px;
+}
+
+.header__menu {
+    font-size: 30px;
+    color: #458FF6;
+    line-height: 80px;
+    display: none;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+.header__nav ul {
+    display: flex;
+    padding-left: 0px;
+}
+
+.header__nav ul li{
+    list-style: none;
+}
+  
+.header__nav ul li a {
+    margin-right: 60px;
+    color: #1F1534;
+    opacity: 50%;
+}
+
+.active a, a:hover{
+    color: #000000 !important;
+    opacity: 100% !important;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu{
+        display: block;
+    }
+    .header__nav ul{
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 93vh;
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .header__nav ul li {
+        display: block;
+        
+    }
+
+    .header__nav ul li a {
+        margin: 0 auto;
+        font-size: 22px;
+        color: #fff;
+        opacity: 100%;
+    }
+
+    #check:checked ~ .header__nav ul{
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 1824px) {
+    .header__nav ul li a {
+        margin-right: 100px;
+    }
+}
+

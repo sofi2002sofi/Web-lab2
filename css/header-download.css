@@ -1,0 +1,117 @@
+/*** header-download ***/
+.download__container {
+    padding-top: 100px;
+    padding-inline-start: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.download__inner {
+    width: 500px;
+}
+  
+.download__heading {
+    width: 250px;
+    font-weight: 550;
+    font-size: 40px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+  
+.download__paragraph {
+    width: 360px;
+    color: #7D7987;
+    margin: 30px 0 20px;
+    font-size: 19px;
+    font-weight: lighter;
+    line-height: 1.6em;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+}
+  
+.download__button {
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download__button img{
+    margin-left: 11px;
+}
+
+.download__image {
+    width: 635px;
+    height: 420px;
+    position: relative;
+}
+
+@media screen and (min-width: 1824px){
+    .download__inner {
+        width: 800px;
+    }
+      
+    .download__heading {
+        width: 400px;
+        font-size: 50px;
+    }
+      
+    .download__paragraph {
+        width: 600px;
+        font-size: 22px;
+    }
+      
+    .download__image {
+        width: 725px;
+        height: 487px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .download__container {
+        padding: 10px 0 0 0 !important;
+    }
+    
+    .download__inner {
+        max-width: 320px !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .download__container {
+        padding: 100px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .download__inner {
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .download__heading {
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .download__paragraph {
+        width: auto;
+        margin: 30px 0 20px;
+        padding: 0 20px;
+    }
+
+    .download__button {
+        margin: 10px 0 0;
+    }
+
+    .download__image {
+        display: none;
+    }
+}
